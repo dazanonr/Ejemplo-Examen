@@ -5,6 +5,7 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
 
     private long deuda, diasRetraso;
     private boolean moroso;
+    private String estadoVencimiento;
 
     public LibroBiblioteca(String nombre, String autor, String estado, String DNI,
                            LocalDate fechaSolicitud, LocalDate fechaEntrega) {
@@ -18,6 +19,8 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
     @Override
     public void calcularDiasRetraso() {
         this.setDiasRetraso(ChronoUnit.DAYS.between(getFechaEntrega(), LocalDate.now()));
+        if (this.getDiasRetraso() > 10) this.setEstadoVencimiento("VENCIDO");
+        else this.setEstadoVencimiento("EN REGLA");
     }
 
     @Override
@@ -54,6 +57,10 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
         this.moroso = moroso;
     }
 
+    public String getEstadoVencimiento() {return estadoVencimiento;}
+
+    public void setEstadoVencimiento(String estadoVencimiento) {this.estadoVencimiento = estadoVencimiento;}
+
     @Override
     public String toString() {
         return "nombre='" + nombre + '\'' +
@@ -65,6 +72,7 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
                 ", deuda=" + deuda +
                 ", diasRetraso=" + diasRetraso +
                 ", moroso=" + moroso +
+                ", estadoVencimiento=" + estadoVencimiento +
                 '\n';
     }
 }
