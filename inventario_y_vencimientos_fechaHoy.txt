@@ -1,3 +1,6 @@
-LibroBiblioteca{nombre='El teorema de Fermat', autor='Simon Singh', estado='PRESTADO', DNI='12345678', fechaSolicitud=2023-05-01, fechaEntrega=2023-05-10, deuda=208, diasRetraso=208, moroso=true}
-LibroBiblioteca{nombre='Correspondencia', autor='Sigmon Freud', estado='Prestado', DNI='23545789', fechaSolicitud=2023-05-10, fechaEntrega=2023-05-20, deuda=198, diasRetraso=198, moroso=true}
-LibroBiblioteca{nombre='Letras de amor', autor='Gustavo Vargas', estado='Prestado', DNI='3557789', fechaSolicitud=2023-05-18, fechaEntrega=2023-05-28, deuda=190, diasRetraso=190, moroso=true}
+nombre='El teorema de Fermat', autor='Simon Singh', estado='PRESTADO', DNI='12345678', fechaSolicitud=2023-05-01, fechaEntrega=2023-05-10, deuda=208, diasRetraso=208, moroso=true
+
+nombre='Correspondencia', autor='Sigmon Freud', estado='Prestado', DNI='23545789', fechaSolicitud=2023-05-10, fechaEntrega=2023-05-20, deuda=198, diasRetraso=198, moroso=true
+
+nombre='Letras de amor', autor='Gustavo Vargas', estado='Prestado', DNI='3557789', fechaSolicitud=2023-05-18, fechaEntrega=2023-05-28, deuda=190, diasRetraso=190, moroso=true
+

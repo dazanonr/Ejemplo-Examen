@@ -56,9 +56,7 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
 
     @Override
     public String toString() {
-        return "LibroBiblioteca{" +
-
-                "nombre='" + nombre + '\'' +
+        return "nombre='" + nombre + '\'' +
                 ", autor='" + autor + '\'' +
                 ", estado='" + estado + '\'' +
                 ", DNI='" + DNI + '\'' +
@@ -67,6 +65,6 @@ public class LibroBiblioteca extends Libro implements Biblioteca{
                 ", deuda=" + deuda +
                 ", diasRetraso=" + diasRetraso +
                 ", moroso=" + moroso +
-                '}';
+                '\n';
     }
 }
